@@ -34,5 +34,52 @@ public class Loop_Basic {
             System.out.println(dlist[i]);
             // 출력
         }
+
+        int[] marks = {90, 25, 67, 45, 80};
+        for(int i=0; i<marks.length; i++){
+            if (marks[i] >= 60){
+                System.out.println((i+1)+"번 학생은 합격입니다.");
+            }else {
+                System.out.println((i+1)+"번 학생은 불합격입니다.");
+            }
+        }
+
+        // 2중 for문을 한 번 해볼게요.
+        // for문을 두 번 사용해서
+        // 구구단 2단 ~ 9단까지 출력하는 코드를 작성 해봅시다.
+
+        for(int i=2; i<=9; i++){
+            System.out.println("===="+i+"단====");
+            for(int j=1; j<=9; j++){
+                System.out.println(i+"*"+j+" = "+(i*j));
+            }
+        }
+
+        // 색깔 배열 선언
+
+        String[] colors = {"red", "green", "yellow"};
+        System.out.println(colors);
+
+        for (int a=0; a<colors.length; a++){
+            System.out.println(colors[a]);
+        }
+
+        // index를 넣는것조차 귀찮아서 자동으로 배열의 값을 가져오는 반복문을 만들어버림
+        // for ~ each문이라고합니다.
+
+        for (String color : colors){
+            System.out.println(color);
+        }
+
+        // for (type ~ 배열안에 들어가 있는 데이터 타입 + 변수명 : iterate ~ 반복해서 값에 접근할 배열
+        int[] numbers = {1,2,3,4,5,6,7,8,9};
+        // for each로 출력을 해보세요
+
+        for (int number : numbers){
+            System.out.println(number);
+        }
+
+
+
     }
 }
