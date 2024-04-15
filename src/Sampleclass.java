@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 
 // 동물 클래스 생성
-class Animal{
+class Animal1{
     String name;// name 클래스안에 선언된 변수는 객체변수라고한다.
     Boolean cute;
 
@@ -27,8 +27,8 @@ public class Sampleclass {
         String juice = mixer("사과당근");
         System.out.println("내가 만든 주스 : " + juice);
 
-        Animal cat = new Animal();
-        Animal dog = new Animal();
+        Animal1 cat = new Animal1();
+        Animal1 dog = new Animal1();
 
         /*dog.name="강아지";
         cat.name="고양이";*/
