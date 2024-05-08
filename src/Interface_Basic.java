@@ -1,13 +1,17 @@
-interface Predator{
+abstract class Predator extends Animal {
     // interface를 상속받을 수 있다 이때는 implements를 쓴다.
-    String getFood();
+    abstract String getFood();
+
+    void printFood(){ // default 를 제거한다 인터페이스에서 추상화 클래스로 변경했기 때문에 defalut는 더 이상 사용할 수 없습니다.
+        System.out.printf("my food is %s\n", getFood());
+    }
 }
 
 interface Barkble{
     void bark();
 }
 
-class Tiger extends Animal implements Predator, Barkble{
+class Tiger extends Predator implements Barkble{
     public String getFood(){
         return "apple";
     }
@@ -16,7 +20,7 @@ class Tiger extends Animal implements Predator, Barkble{
     }
 }
 
-class Lion extends Animal implements  Predator, Barkble{
+class Lion extends Predator implements Barkble{
     public String getFood(){
         return "banana";
     }
