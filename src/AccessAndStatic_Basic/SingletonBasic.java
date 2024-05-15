@@ -8,12 +8,10 @@ class Singleton{
        public static Singleton getInstance() {
            if (one == null) {
                one = new Singleton();
-           } else {
+           }
                return one;
            }
 
-           return null;
-       }
 
 }
 
